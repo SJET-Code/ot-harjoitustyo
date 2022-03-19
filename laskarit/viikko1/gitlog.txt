@@ -1,0 +1,113 @@
+commit 914cbb0fc1d4010b10479d2fa9c5d56df574c5c5
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 22:18:29 2022 +0200
+
+    file1 poistettu ja file2 nimi muutettu
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1273fb0d916b6f195f11abb70b643d87ce7b46a0
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 21:29:57 2022 +0200
+
+    lisäsin tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 82af4b69437c962f910d4e9cb9503b88076817c1
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 20:30:12 2022 +0200
+
+    muutokset ekan ja kolmannen sisältöön
+
+ eka.txt    | 27 ++++++++++++++-------------
+ kolmas.txt |  2 +-
+ 2 files changed, 15 insertions(+), 14 deletions(-)
+
+commit eb22277cbf162fa75ee5f4b4068a4023c0f140a8
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 20:07:17 2022 +0200
+
+    tiedosto muutti nimeään
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5a384ef7aa9820224f7ae8f54c69dcf4f2944e7c
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 20:05:16 2022 +0200
+
+    poistin toisen
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit d9ec6a7d57133fe7e711c6822cc3af5dc7e70288
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 20:01:34 2022 +0200
+
+    muutin tekstiä hieman
+
+ tiedosto.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 40c56732df0b99f8496e4f24817e3209edfd9b00
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:58:51 2022 +0200
+
+    minmax lisätty tiedostoon
+
+ tiedosto.txt | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+commit f144b281fbfdfe014cba311ac15250be94fd6a3f
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:46:15 2022 +0200
+
+    lisätty juttuja ja jokin tiedosto
+
+ stuff/jokin.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 58b65abb8b4ddeac291246710f1b59b28e864950
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:44:26 2022 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 69c990a801f6ea958f2b0b46734633f3434ee7cb
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:42:55 2022 +0200
+
+    kolmas tiedosto lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 700dff3e47f70c19795207cccff69481f80ffb5e
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:38:57 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 6d005f8cfe4929140fef495aea3b8b4d6993bc4b
+Author: Santeri Tolonen <santeri.tolonen@helsinki.fi>
+Date:   Fri Mar 18 19:36:02 2022 +0200
+
+    tiedosto.txt on luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
