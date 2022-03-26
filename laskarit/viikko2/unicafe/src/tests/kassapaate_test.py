@@ -14,25 +14,25 @@ class TestKassapaate(unittest.TestCase):
         self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat), (0,0))
     
     def test_kateisosto_toimii_kun_rahat_riittavat(self):
-        emaksu=self.kassa.syo_edullisesti_kateisella(5)
-        mmaksu=self.kassa.syo_maukkaasti_kateisella(5)
+        emaksu=self.kassa.syo_edullisesti_kateisella(500)
+        mmaksu=self.kassa.syo_maukkaasti_kateisella(500)
         self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu), (1,1,100000+640,260,100))
 
     def test_kateisosto_toimii_kun_rahat_eivat_riita(self):
-        emaksu=self.kassa.syo_edullisesti_kateisella(1)
-        mmaksu=self.kassa.syo_maukkaasti_kateisella(1)
+        emaksu=self.kassa.syo_edullisesti_kateisella(100)
+        mmaksu=self.kassa.syo_maukkaasti_kateisella(100)
         self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu), (0,0,100000,100,100))
     
     def test_korttiosto_toimii_kun_kortilla_on_tarpeeksi_rahaa(self):
         emaksu=self.kassa.syo_edullisesti_kortilla(self.kortti)
         mmaksu=self.kassa.syo_maukkaasti_kortilla(self.kortti)
-        self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu,self.kortti.saldo,self.kortti.saldo), (1,1,100000,True,True,460))
+        self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu,self.kortti.saldo), (1,1,100000,True,True,360))
     
     def test_korttiosto_toimii_oikein_kun_kortilla_ei_ole_tarpeeksi_rahaa(self):
         self.kortti.saldo=100
         emaksu=self.kassa.syo_edullisesti_kortilla(self.kortti)
         mmaksu=self.kassa.syo_maukkaasti_kortilla(self.kortti)
-        self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu,self.kortti.saldo,self.kortti.saldo), (0,0,100000,False,False,100))
+        self.assertEqual((self.kassa.edulliset,self.kassa.maukkaat,self.kassa.kassassa_rahaa,emaksu,mmaksu,self.kortti.saldo), (0,0,100000,False,False,100))
 
     def test_kortille_arvon_lataaminen_lisaa_kortin_saldoa_oikein(self):
         self.kassa.lataa_rahaa_kortille(self.kortti,100)
