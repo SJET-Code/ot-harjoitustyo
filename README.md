@@ -1,4 +1,4 @@
-# Ohjelmistotekniikka projekti
+# Ohjelmistotekniikka projekti Blackjack peli
 
 ###### Viikko 1
 
