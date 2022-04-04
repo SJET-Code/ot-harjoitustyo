@@ -71,4 +71,6 @@ classDiagram
 	PeliRuutu "4" <|-- "4" AsemaRuutu
 	PeliRuutu "2" <|-- "2" LaitosRuutu
 	PeliRuutu "24" <|-- "24" KatuRuutu
+	SattumaRuutu .. Kortti
+	YhteismaaRuutu .. Kortti
 ```
