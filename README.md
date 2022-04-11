@@ -1,14 +1,24 @@
-# Ohjelmistotekniikka projekti Blackjack peli
+# BlackJackApp
 
-###### Viikko 1
+Sovellus simuloi tunnettua casino peliä [Blackjack](https://fi.wikipedia.org/wiki/Blackjack)!
+Peli kulkee kierroksina, joiden alussa pelaaja asettaa haluamansa panoksen pelin sisäisiä crediittejä.
+Tavoitteena on saada pelikorteista luku mahdollisimman lähelle arvoa 21, ylittämättä tätä arvoa.
+Vastustajana toimii jakaja. Peli jatkuu niin pitkään kun crediittejä riittää, tai kunnes pelaaja päättää lopettaa.
 
-Käsitellään **komentorivin** ja *gitin* perusteita!
+## Dokumentaatio
 
+- [vaativuusmäärittely](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-###### 1 [gitlog.txt](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+- [tuntikirjanpito](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-###### 2 [komentorivi.txt](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+- [credits](./dokumentaatio/credits.md)
 
-###### 3 [vaativuusmäärittely](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Changelog](./dokumentaatio/changelog.md)
 
-###### 4 [tuntikirjanpito](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+## Asennus
+
+Voit testata sovellusta kloonaamalla tämän repon ja ajamalla komenot:
+```
+poetry install
+poetry run invoke start
+```
