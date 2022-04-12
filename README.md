@@ -7,17 +7,19 @@ Vastustajana toimii jakaja. Peli jatkuu niin pitkään kun crediittejä riittä�
 
 ## Dokumentaatio
 
-- [vaativuusmäärittely](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Vaativuusmäärittely](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-- [tuntikirjanpito](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Tuntikirjanpito](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-- [credits](./dokumentaatio/credits.md)
+- [Credits](./dokumentaatio/credits.md)
 
 - [Changelog](./dokumentaatio/changelog.md)
 
+- [Arkkitehtuuri](./dokumentaatio/arkkitehtuuri.md)
+
 ## Asennus
 
-Voit testata sovellusta kloonaamalla tämän repon ja ajamalla komenot:
+Voit testata sovellusta kloonaamalla tämän repon ja ajamalla komennot:
 ```
 poetry install
 poetry run invoke start
