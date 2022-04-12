@@ -6,7 +6,6 @@ from renderer import Renderer
 from clock import Clock
 
 
-
 def main():
 
     display_height = 720
@@ -15,7 +14,7 @@ def main():
 
     pygame.display.set_caption("Blackjack")
 
-    board=Board(display)
+    board = Board(display)
     event_queue = EventQueue()
     renderer = Renderer(display, board)
     clock = Clock()

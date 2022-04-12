@@ -1,10 +1,11 @@
 import pygame
 from image_loader import load_sprite
 
+
 class Card(pygame.sprite.Sprite):
-    def __init__(self, x=0, y=0, card=""):
+    def __init__(self, x_position=0, y_position=0, card=""):
         super().__init__()
-        self.image=load_sprite(card)
+        self.image = load_sprite(card)
         self.rect = self.image.get_rect()
-        self.rect.x = x
-        self.rect.y = y
+        self.rect.x = x_position
+        self.rect.y = y_position

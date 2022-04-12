@@ -1,13 +1,14 @@
 import unittest
 from blackjack import Player
 
+
 class TestPlayer(unittest.TestCase):
     def setUp(self):
-        self.player=Player()
-    
+        self.player = Player()
+
     def test_starting_credits_are_correct(self):
         self.assertEqual(self.player.credits(), 100)
-    
+
     def test_betting_takes_out_the_right_amount_of_credits(self):
         self.player.bet(45)
         self.assertEqual(self.player.credits(), 55)

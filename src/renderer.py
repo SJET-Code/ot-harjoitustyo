@@ -1,5 +1,6 @@
 import pygame
 
+
 class Renderer:
     def __init__(self, display, board):
         self._display = display
