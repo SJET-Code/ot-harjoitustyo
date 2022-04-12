@@ -21,8 +21,8 @@ class Board:
     def game_update(self, player_credits, player_cards, dealer_cards, game_state):
         self.temp_game_sprites.empty()
         if game_state == 0:
-            self.card_compiler(dealer_cards,0,0)
-            self.card_compiler(player_cards,1,0)
+            self.card_compiler(dealer_cards[0],0,0)
+            self.card_compiler(player_cards[0],1,0)
             self.temp_game_sprites.add(
                 Text(f'HAND VALUE: {player_cards[1]}', 30, (255, 255, 255), 500, 550))
             self.temp_game_sprites.add(
@@ -34,8 +34,8 @@ class Board:
             self.temp_game_sprites.add(
                 Text(f'CREDITS: {player_credits}', 30, (255, 255, 255), 10, 650))
         elif game_state == 1:
-            self.card_compiler(dealer_cards,0,1)
-            self.card_compiler(player_cards,1,1)
+            self.card_compiler(dealer_cards[0],0,1)
+            self.card_compiler(player_cards[0],1,1)
             self.temp_game_sprites.add(
                 Text(f'HAND VALUE: {player_cards[1]}', 30, (255, 255, 255), 500, 550))
             self.temp_game_sprites.add(

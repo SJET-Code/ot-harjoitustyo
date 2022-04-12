@@ -38,11 +38,11 @@ class PlayingCard:
 
 class Deck:
     def __init__(self):
-        self._deck = self.create_deck()
+        self._deck = self._create_deck()
         self._size = len(self._deck)
 
     def shuffle(self):
-        self._deck = self.create_deck()
+        self._deck = self._create_deck()
         random.shuffle(self._deck)
         self._size = len(self._deck)
 
@@ -53,7 +53,7 @@ class Deck:
             self.shuffle()
         return card
 
-    def create_deck(self):
+    def _create_deck(self):
         crests = ['S', 'C', 'D', 'H']
         deck = []
         for crest in crests:
@@ -88,27 +88,30 @@ class Round:
         self._player.bet(bet)
         self._bet = bet
         card = self._deck.get_card()
-        self._dealer_hand.append(card)
-        self._dealer_hand_value += card.value()
-        self._dealer_card = self._deck.get_card()
+        self._player_hand.append(card)
+        self._player_hand_value += card.value()
         card = self._deck.get_card()
         self._player_hand.append(card)
         self._player_hand_value += card.value()
+        if self._player_hand_value>21:
+            self.check_for_aces(1)
+        card = self._deck.get_card()
+        self._dealer_hand.append(card)
+        self._dealer_hand_value += card.value()
+        self._dealer_card = self._deck.get_card()
 
     def hit(self):
         card = self._deck.get_card()
         self._player_hand_value += card.value()
         self._player_hand.append(card)
         if self._player_hand_value > 21:
-            for player_card in self._player_hand:
-                if player_card.value() == 11:
-                    player_card.ace_change()
-                    self._player_hand_value -= 10
-                    break
+            self.check_for_aces(1)
 
     def stay(self):
         self._dealer_hand_value += self._dealer_card.value()
         self._dealer_hand.append(self._dealer_card)
+        if self._dealer_hand_value>21:
+            self.check_for_aces(0)
 
     def dealer_deal(self):
         if self._dealer_hand_value >= 17:
@@ -119,7 +122,7 @@ class Round:
         if 17 <= self._dealer_hand_value <= 21:
             return self.check_winner()
         if self._dealer_hand_value > 21:
-            self.check_for_aces(self._dealer_hand,self._dealer_hand_value)
+            self.check_for_aces(0)
             if self._dealer_hand_value >= 17:
                 return self.check_winner()
         return 2
@@ -160,9 +163,16 @@ class Round:
     def dealer_hand(self):
         return self._dealer_hand, self._dealer_hand_value
 
-    def check_for_aces(self, hand, hand_value):
-        for card in hand:
-            if card.value()==11:
-                card.ace_change()
-                hand_value-=10
-                break
+    def check_for_aces(self, user:int):
+        if user==0:
+            for card in self._dealer_hand:
+                if card.value()==11:
+                    card.ace_change()
+                    self._dealer_hand_value-=10
+                    break
+        if user==1:
+            for card in self._player_hand:
+                if card.value()==11:
+                    card.ace_change()
+                    self._player_hand_value-=10
+                    break
