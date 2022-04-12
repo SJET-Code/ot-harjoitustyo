@@ -8,24 +8,24 @@ tai kunnes pelaaja päättää lopettaa, milloin lopullinen rahamäärä kuvasta
 
 ## Käyttöliittymäluonnos
 
-Sovelluksen käyttöliittymä koostuu alkunäytöstä, pelinäkymästä, ja loppetusnäkymästä.
+Sovelluksen käyttöliittymä koostuu alkunäytöstä, pelinäkymästä, ja lopetusnäkymästä.
 Alkunäytöllä valitaan uuden pelin, pistetilaston, ja pelin sääntöjen väliltä.
 Pelinäkymässä valitaan panos, nähdään jaetut kortit, ja valitaan pelin kulkuun liittyviä valintoja (tuplaus, uuden kortin nosto, vakuutus, jne.).
 Loppunäkymässä nähdään korkeimmat pisteet, voidaan tallentaa tulos nimimerkillä varustettuna tähän listaan, sekä voidaan valita uuden pelin aloituksen.
 
 ## Perusversion tarjoama toiminnallisuus
 
-- Pelaaja voi aloittaa uuden blackjack pelin
+- [x] Pelaaja voi aloittaa uuden blackjack pelin 
   - uuden pelin alussa pelaaja saa 100 crediittiä
 
-- Pelaaja voi asettaa panoksen uuden kierroksen alkaessa
+- [x] Pelaaja voi asettaa panoksen uuden kierroksen alkaessa
   - minimipanos on 5 crediittiä, maksimipanos on pelaajan crediittien määrä
   
-- Pelaajalle jaetaan kaksi korttia, jonka jälkeen pelaaja voi valita haluaako hän nostaa uuden kortin, vai jäädä nykyisiin kortteihin.
+- [x] Pelaajalle jaetaan kaksi korttia, jonka jälkeen pelaaja voi valita haluaako hän nostaa uuden kortin, vai jäädä nykyisiin kortteihin.
   - mikäli pelaaja nostaa uuden kortin ja pelaajan korttien yhteisarvo on >21, pelaaja häviää kierroksen ja menettää panoksensa
   - mikäli pelaaja tai jakaja nostaa ässän, on ässän arvo aina 11, kunnes pelaajan käden yhteisarvo on >21, milloin ässän arvoksi tulee 1
 
-- Kierroksen loputtua pelaaja häviää pelin, jos hänellä on <5 crediittiä
+- [x] Kierroksen loputtua pelaaja häviää pelin, jos hänellä on <5 crediittiä
   - pelaaja voi myös lopettaa pelin halutessaan, tai pelata uuden kierroksen, jos hänellä on >=5 crediittiä
  
  
