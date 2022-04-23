@@ -17,3 +17,10 @@
 - Lisätty luokkadiagrammi [arkkitehtuuri.md](arkkitehtuuri.md)
 - Siistitty koodia pylintilla
 - Lisätty invoke taskit sovelluksen käynnistykseen, pylintille ja testeille
+
+## Viikko 5
+
+- Paranneltu käyttöliittymää lisäämällä uusia spritejä
+- lisätty sql tietokanta pitämään kirjaa pisteistä
+- Käyttäjä voi nyt kierroksen lopussa lopettaa pelin, milloin hänen crediittinsä kuvaavat hänen pisteitään
+- Käyttäjä näkee lopetettuaan pelin top 10 korkeinta tulosta, ja voi jättää omat pisteensä ja nimimerkkinsä

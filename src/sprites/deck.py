@@ -9,3 +9,9 @@ class DeckSprite(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x_position
         self.rect.y = y_position
+
+    def height(self):
+        return self.image.get_height()
+
+    def width(self):
+        return self.image.get_width()
