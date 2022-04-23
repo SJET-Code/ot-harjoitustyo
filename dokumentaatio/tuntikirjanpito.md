@@ -8,4 +8,4 @@
 | 12.4  | 5    | pylintin käyttöönotto, bugien korjausta, testien lisäys ja dokumentointia |
 | 22.4  | 2    | tietokannanlisäys pisteiden talletusta varten |
 | 23.4  | 6    | uusia spritejä ja paransin käyttöliittymää |
-| yht   | 29   | | 
+| yht   | 32   | | 
