@@ -18,7 +18,6 @@ sequenceDiagram
   participant GL as GameLoop
   participant B as Board
   participant Ren as Renderer
-  participant R as Round
   participant P as Player
   participant E as EventQueue
   loop rendering start sprites
