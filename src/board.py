@@ -7,7 +7,7 @@ from sprites.button import Button
 from repositories.score_repository import score_repository
 
 class Board:
-    def __init__(self, display):
+    def __init__(self):
         self.sprites = {
             'start_sprites' : pygame.sprite.Group(),
             'game_sprites' : pygame.sprite.Group(),
@@ -18,7 +18,6 @@ class Board:
         self.player_name = ""
         self.score = 0
         self.state = {'start' : True, 'game' : False, 'end' : False}
-        self.display = display
         text = Text('New Game', 80, (255, 255, 255), 1330//2-200, 600)
         self.sprites['start_sprites'].add(
             text,

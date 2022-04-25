@@ -111,3 +111,48 @@ class TestRound(unittest.TestCase):
         test=self.round._dealer_hand_value
         self.round.check_for_aces(0)
         self.assertEqual(test-10,self.round._dealer_hand_value)
+    
+    def test_function_hit_checks_for_aces_when_player_hand_value_is_over_21(self):
+        self.round.new_round(25)
+        self.round._player_hand.append(PlayingCard(11,'SA'))
+        self.round._player_hand_value+=11
+        while self.round._player_hand_value<=21:
+            self.round._player_hand.append(PlayingCard(11,'SA'))
+            self.round._player_hand_value+=11
+        test = self.round._player_hand_value
+        self.round.hit()
+        test += self.round._player_hand[-1].value()
+        self.assertEqual(test-10, self.round._player_hand_value)
+
+    def test_function_stay_checks_for_aces_when_dealer_hand_value_is_over_21(self):
+        self.round.new_round(25)
+        self.round._dealer_card = PlayingCard(11,'SA')
+        while self.round._dealer_hand_value<=11:
+            self.round._dealer_hand.append(PlayingCard(11,'SA'))
+            self.round._dealer_hand_value+=11
+        test = self.round._dealer_hand_value+11
+        self.round.stay()
+        self.assertEqual(test-10, self.round._dealer_hand_value)
+    
+    def test_function_count_payout_gives_back_the_bet_when_both_have_blackjack(self):
+        self.round.new_round(25)
+        self.round._dealer_hand = [PlayingCard(11,'SA'), PlayingCard(10,'SJ')]
+        self.round._dealer_hand_value = 21
+        self.round._player_hand = [PlayingCard(11,'SA'), PlayingCard(10,'SJ')]
+        self.round._player_hand_value = 21
+        self.round.count_payout()
+        self.assertEqual(100, self.round._player.credits())
+
+    def test_function_check_winner_returns_1_when_both_hand_value_21(self):
+        self.round.new_round(25)
+        self.round._dealer_hand_value = 21
+        self.round._player_hand_value = 21
+        test = self.round.check_winner()
+        self.assertEqual(test, 1)
+    
+    def test_function_check_winner_returns_0_when_dealer_hand_value_is_higher(self):
+        self.round.new_round(25)
+        self.round._dealer_hand_value = 21
+        self.round._player_hand_value = 20
+        test = self.round.check_winner()
+        self.assertEqual(test, 0)

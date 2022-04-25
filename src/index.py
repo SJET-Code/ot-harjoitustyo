@@ -14,7 +14,7 @@ def main():
 
     pygame.display.set_caption("Blackjack")
 
-    board = Board(display)
+    board = Board()
     event_queue = EventQueue()
     renderer = Renderer(display, board)
     clock = Clock()

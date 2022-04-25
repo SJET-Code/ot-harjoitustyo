@@ -22,3 +22,8 @@ class TestDeck(unittest.TestCase):
         self.deck.get_card()
         self.deck.shuffle()
         self.assertEqual(self.deck._size, 52)
+    
+    def test_function_get_card_shuffles_the_deck_when_less_than_13_cards(self):
+        for i in range(40):
+            self.deck.get_card()
+        self.assertEqual(self.deck._size, 52)
