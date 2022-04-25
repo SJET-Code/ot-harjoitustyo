@@ -24,3 +24,14 @@ Voit testata sovellusta kloonaamalla tämän repon ja ajamalla komennot:
 poetry install
 poetry run invoke start
 ```
+## Testien suoritus
+Voit suorittaa testit ja saada testikattavuus raportin komennoilla:
+```
+poetry run invoke test
+poetry run invoke coverage-report
+```
+## Pylint tarkistus
+Voit tarkistaa koodin tyylin pylintilla, ajamalla komennon
+```
+poetry run invoke lint
+```
