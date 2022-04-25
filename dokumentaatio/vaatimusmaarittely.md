@@ -27,7 +27,9 @@ Loppunäkymässä nähdään korkeimmat pisteet, voidaan tallentaa tulos nimimer
 
 - [x] Kierroksen loputtua pelaaja häviää pelin, jos hänellä on <5 crediittiä
   - pelaaja voi myös lopettaa pelin halutessaan, tai pelata uuden kierroksen, jos hänellä on >=5 crediittiä
- 
+
+- [x] Pelin lopetettuaan, pelaaja saa näkymän korkeimmista pisteistä, ja voi tallentaa oman tuloksensa nimimerkillä (3 kirjainta)
+  - pelaajan crediitit kuvastavat hänen pisteitään
  
  ## Jatkokehitysideoita
  
