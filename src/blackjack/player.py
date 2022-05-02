@@ -17,7 +17,7 @@ class Player:
         Returns:
             bool : True, jos pelaajalla on tarpeeksi crediittejä, muuten False.
         """
-        if self._credits-bet >= 0:
+        if self._credits - bet >= 0:
             self._credits -= bet
             return True
         return False

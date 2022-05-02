@@ -80,7 +80,7 @@ class Round:
             pass
         else:
             new_hand = hand.split()
-            self.add_player_hand(new_hand)
+            self._player_hands.append(new_hand)
 
     def stay(self):
         """Välittää aktiiviselle kädelle tiedon, että pelaaja haluaa jäädä
