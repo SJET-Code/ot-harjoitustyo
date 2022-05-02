@@ -1,9 +1,9 @@
 import pygame
-from board import Board
-from gameloop import GameLoop
-from event_queue import EventQueue
-from renderer import Renderer
-from clock import Clock
+from ui.board import Board
+from ui.gameloop import GameLoop
+from ui.event_queue import EventQueue
+from ui.renderer import Renderer
+from ui.clock import Clock
 
 
 def main():

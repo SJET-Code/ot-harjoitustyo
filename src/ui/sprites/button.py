@@ -1,5 +1,5 @@
 import pygame
-from image_loader import load_sprite
+from ui.image_loader import load_sprite
 
 
 class Button(pygame.sprite.Sprite):

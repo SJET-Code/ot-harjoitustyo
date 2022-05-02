@@ -24,3 +24,10 @@
 - lisätty sql tietokanta pitämään kirjaa pisteistä
 - Käyttäjä voi nyt kierroksen lopussa lopettaa pelin, milloin hänen crediittinsä kuvaavat hänen pisteitään
 - Käyttäjä näkee lopetettuaan pelin top 10 korkeinta tulosta, ja voi jättää omat pisteensä ja nimimerkkinsä
+
+## Viikko 6
+
+- Lisätty mahdollisuus pelata useita käsiä samaan aikaan
+- Lisätty mahdollisuus tuplata, jakaa ja antautua käsi
+- Lisätty docstring kuvaukset useimmista luokista
+- Koodi jaettu kuvaavammin eri kansioihin

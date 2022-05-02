@@ -9,4 +9,9 @@
 | 22.4  | 2    | tietokannanlisäys pisteiden talletusta varten |
 | 23.4  | 6    | uusia spritejä ja paransin käyttöliittymää |
 | 24.4  | 5    | uusia testejä ja sekvenssikaavion pelin aloituksesta |
-| yht   | 37   | | 
+| 29.4  | 6    | useiden käsien koodausta |
+| 30.4  | 5    | jako mahdollisuuden koodausta |
+| 1.5   | 3    | antautumis ja tuplaus mahdollisuuksien koodausta |
+| 1.5   | 2    | docstringit useimmille luokille |
+| 2.5   | 5    | dokumentointia ja koodin jäsentelyä |
+| yht   | 58   | | 
