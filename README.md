@@ -27,10 +27,10 @@ poetry install
 poetry run invoke start
 ```
 
-## Tietokanna alustus
+## Tietokannan alustus
 
 Jos haluat tyhjentää tietokannan pisteistä, aja komento:
-````
+```
 poetry run invoke init-db
 ```
 ## Testien suoritus
