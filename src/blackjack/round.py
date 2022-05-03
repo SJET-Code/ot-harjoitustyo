@@ -110,6 +110,8 @@ class Round:
             self._dealer_hand.append(self._dealer_card)
         if self._dealer_hand_value > 21:
             self._check_for_aces()
+            if self._dealer_hand_value < 17:
+                return False
         if self._dealer_hand_value > 16:
             return self.payout_hands()
         card = self._deck.get_card()

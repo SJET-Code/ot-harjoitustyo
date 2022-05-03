@@ -45,6 +45,7 @@ class Hand:
             for card in self._attributes['cards']:
                 if card.value() == 11:
                     card.ace_change()
+                    self._attributes['value'] -= 10
                     break
         self._attributes['can_split'] = False
         self._attributes['value'] += new_card.value()

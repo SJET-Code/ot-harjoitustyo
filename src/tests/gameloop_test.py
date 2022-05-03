@@ -1,6 +1,6 @@
 import unittest
-from gameloop import GameLoop
-from board import Board
+from ui.gameloop import GameLoop
+from ui.board import Board
 
 class StubClock:
     def tick(self, fps):

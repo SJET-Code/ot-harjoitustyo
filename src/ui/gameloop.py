@@ -98,6 +98,7 @@ class GameLoop:
             self._board.user_input(self._game_tools['name'])
         elif key == pygame.K_RETURN and len(self._game_tools['name']) == 3:
             self._board.confirm_user_input()
+            self._game_tools['round'].reset()
             self._switch_state(0)
             self._game_tools['name'] = ""
         elif len(self._game_tools['name']) < 3 and letter in ascii_letters:

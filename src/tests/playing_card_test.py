@@ -1,5 +1,5 @@
 import unittest
-from blackjack import PlayingCard
+from blackjack.playing_card import PlayingCard
 
 
 class TestPlayingCard(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
-from blackjack import Deck, PlayingCard
-
+from blackjack.deck import Deck
+from blackjack.playing_card import PlayingCard
 
 class TestDeck(unittest.TestCase):
     def setUp(self):
@@ -17,13 +17,7 @@ class TestDeck(unittest.TestCase):
         card=self.deck.get_card()
         self.assertTrue(type(card) is PlayingCard)
     
-    def test_function_shuffle_resets_the_deck(self):
-        self.deck.get_card()
-        self.deck.get_card()
-        self.deck.shuffle()
-        self.assertEqual(self.deck._size, 52)
-    
     def test_function_get_card_shuffles_the_deck_when_less_than_13_cards(self):
-        for i in range(40):
+        for i in range(41):
             self.deck.get_card()
-        self.assertEqual(self.deck._size, 52)
+        self.assertEqual(self.deck._size, 51)
