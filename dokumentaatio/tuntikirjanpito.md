@@ -14,4 +14,6 @@
 | 1.5   | 3    | antautumis ja tuplaus mahdollisuuksien koodausta |
 | 1.5   | 2    | docstringit useimmille luokille |
 | 2.5   | 5    | dokumentointia ja koodin jäsentelyä |
-| yht   | 58   | | 
+| 3.5   | 4    | uusia testejä |
+| 3.5   | 2    | käyttöohjeen ja arkkitehtuuri dokumentin laatimista |
+| yht   | 64   | | 

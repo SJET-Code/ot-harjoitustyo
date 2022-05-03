@@ -7,9 +7,11 @@ Vastustajana toimii jakaja. Peli jatkuu niin pitkään kun crediittejä riittä�
 
 ## Dokumentaatio
 
-- [Vaativuusmäärittely](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
 
-- [Tuntikirjanpito](https://github.com/SJET-Code/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Vaativuusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+
+- [Tuntikirjanpito](./dokumentaatio/tuntikirjanpito.md)
 
 - [Credits](./dokumentaatio/credits.md)
 
@@ -23,6 +25,13 @@ Voit testata sovellusta kloonaamalla tämän repon ja ajamalla komennot:
 ```
 poetry install
 poetry run invoke start
+```
+
+## Tietokanna alustus
+
+Jos haluat tyhjentää tietokannan pisteistä, aja komento:
+````
+poetry run invoke init-db
 ```
 ## Testien suoritus
 Voit suorittaa testit ja saada testikattavuus raportin komennoilla:

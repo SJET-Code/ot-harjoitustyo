@@ -2,7 +2,20 @@
 
 ## Luokkadiagrammi
 
-![classdiagram](https://user-images.githubusercontent.com/90755361/162941854-de2bd216-9e61-487c-aecc-51c1d12b70d9.png)
+![classdiagram](https://user-images.githubusercontent.com/90755361/166474607-5deae4c4-de6e-48eb-b87c-94d8be23fc19.png)
+
+## Sovelluslogiikka
+
+Pelin sovelluslogiikka on jaettu käyttöliittymän eli pelinäkymän muodostaviin kansion ui luokkiin, ja pelilogiikan luokista muodostuvaan kansioon blackjack.
+
+### Pelilogiikka
+
+Pelilogiikka perustuu luokan Round ympärille. Round luokka kuvastaa yhtä blackjack kierrosta, ja hyödyntää kaikkia muita pelilogiikan luokkia. Luokka Hand kuvastaa yhtä pelaajan pelaamaa kättä. Luokka Player huolehtii pelaajan crediiteistä, kun taas luokka Deck kuvastaa korttipakkaa, josta nostetaan PlayinCard luokan kuvastavia peli kortteja.
+
+### Käyttöliittymälogiikka
+
+Käyttöliittymä muodostuu luokan GameLoop ympärille. GameLoop hyödyntää luokkaa Board, mikä asettelee peli-elementit oikeille paikoille pelitilanteen perusteella.
+Luokka EventQueue havaitsee pelaajan näppäimistön komennot, ja välittää ne GameLoopin funktioille. Luokka Renderer piirtää Sprite-oliot pelaajan näytölle luokan Clock määrittällä nopeudella.
 
 ## Pelin toiminnallisuus
 
