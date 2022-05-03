@@ -1,6 +1,6 @@
 # Sovelluksen käyttöönotto ja käyttö
 
-Lataa uusin [julkaisu](/releases) tietokoneellesi ja pura zip tiedosto sopivaan paikkaan.
+Lataa uusin [julkaisu](https://github.com/SJET-Code/ot-harjoitustyo/releases) tietokoneellesi ja pura zip tiedosto sopivaan paikkaan.
 
 ## Tietokannan konfigurointi ja alustus
 
