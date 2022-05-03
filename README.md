@@ -46,3 +46,4 @@ poetry run invoke lint
 ```
 ## Releases
 - [viikko 5 release](https://github.com/SJET-Code/ot-harjoitustyo/releases/tag/viikko5)
+- [viikko 6 release](https://github.com/SJET-Code/ot-harjoitustyo/releases/tag/viikko6)
