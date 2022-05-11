@@ -9,9 +9,13 @@ tai kunnes pelaaja päättää lopettaa, milloin lopullinen rahamäärä kuvasta
 ## Käyttöliittymäluonnos
 
 Sovelluksen käyttöliittymä koostuu alkunäytöstä, pelinäkymästä, ja lopetusnäkymästä.
-Alkunäytöllä valitaan uuden pelin, pistetilaston, ja pelin sääntöjen väliltä.
-Pelinäkymässä valitaan panos, nähdään jaetut kortit, ja valitaan pelin kulkuun liittyviä valintoja (tuplaus, uuden kortin nosto, jne.).
-Loppunäkymässä nähdään korkeimmat pisteet, voidaan tallentaa tulos nimimerkillä varustettuna tähän listaan, sekä voidaan valita uuden pelin aloituksen.
+
+- Alkunäytöllä voidaan aloittaa uusi peli.
+- Pelinäkymässä valitaan kaikki blackjack kierrokseen kuuluvat valinnat:
+  - Kuinka monta kättä pelaaja haluaa pelata kierroksella, ja millä panoksilla
+  - Nähdään jaetut kortit, ja valitaan pelin kulkuun liittyviä valintoja (tuplaus, uuden kortin nosto, jne.)
+  - Valitaan kierroksen lopussa halutaanko pelata uusi kierros, aloittaa uusi peli, vai lopettaa peli ja tallentaa tulos (retire)
+- Loppunäkymässä nähdään korkeimmat pisteet, voidaan tallentaa tulos nimimerkillä varustettuna tähän listaan, sekä voidaan aloittaa uusi peli.
 
 ## Pelin toiminnallisuudet
 

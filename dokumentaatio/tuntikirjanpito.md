@@ -16,4 +16,7 @@
 | 2.5   | 5    | dokumentointia ja koodin jäsentelyä |
 | 3.5   | 4    | uusia testejä |
 | 3.5   | 2    | käyttöohjeen ja arkkitehtuuri dokumentin laatimista |
-| yht   | 64   | | 
+| 9.5   | 2    | tietokanta ja Hand-luokan testejä |
+| 10.5  | 5    | Arkkitehtuuridokumentin ja vaativuusmäärittelyn päivitys |
+| 11.5  | 3    | Testausdokumentin laatiminen |
+| yht   | 74   | | 
