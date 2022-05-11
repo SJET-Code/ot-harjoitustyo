@@ -19,6 +19,8 @@ Vastustajana toimii jakaja. Peli jatkuu niin pitk채채n kun crediittej채 riitt채�
 
 - [Arkkitehtuuri](./dokumentaatio/arkkitehtuuri.md)
 
+- [Testausdokumentti](./dokumentaatio/testaus.md)
+
 ## Asennus
 
 Voit testata sovellusta kloonaamalla t채m채n repon ja ajamalla komennot:
